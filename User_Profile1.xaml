@@ -1,0 +1,69 @@
+<Window x:Class="Medical_Form.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Medical_Form" 
+        mc:Ignorable="d"
+        d:DesignHeight="1100" d:DesignWidth="1500"
+        Title="Window">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Background="White">
+            <Label Content="MEDICAL HISTORY FORM" HorizontalAlignment="Left" Height="67" Margin="492,10,0,0" VerticalAlignment="Top" Width="419" FontSize="35" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Label Content="Recommended by:" HorizontalAlignment="Left" Height="41" Margin="9,127,0,0" VerticalAlignment="Top" Width="238" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkFacebook" Content="Facebook" HorizontalAlignment="Left" Height="34" Margin="252,148,0,0" VerticalAlignment="Top" Width="137" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkFriend" Content="Friend" HorizontalAlignment="Left" Margin="431,148,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkwebsite" Content="Website" HorizontalAlignment="Left" Margin="569,150,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkinsurance" Content="Insurance Company" HorizontalAlignment="Left" Margin="734,150,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkother" Content="Other socail Media" HorizontalAlignment="Left" Margin="252,204,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold" Width="248"/>
+            <CheckBox x:Name="chksign" Content="Sign" HorizontalAlignment="Left" Margin="1034,150,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkdoctor" Content="Doctor" HorizontalAlignment="Left" Margin="569,204,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="3" Margin="70,273,0,0" VerticalAlignment="Top" Width="1034" Background="Black"/>
+            <Label Content="Name:" HorizontalAlignment="Left" Height="48" Margin="10,337,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="38" Margin="134,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <Label Content="Email:" HorizontalAlignment="Left" Height="48" Margin="10,488,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+
+            <Label Content="Gender:" HorizontalAlignment="Left" Height="48" Margin="626,318,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <ComboBox Name="cmbGender" HorizontalAlignment="Left" Height="38" Margin="856,323,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Segoe UI Semibold">
+                <ComboBoxItem Content="Male"/>
+                <ComboBoxItem Content="Female"/>
+            </ComboBox>
+
+            <Label Content="Addresse:" HorizontalAlignment="Left" Height="48" Margin="10,415,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <TextBox x:Name="adderesse" HorizontalAlignment="Left" Height="38" Margin="134,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <TextBox x:Name="email1" HorizontalAlignment="Left" Height="38" Margin="134,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <TextBox x:Name="phone1" HorizontalAlignment="Left" Height="38" Margin="134,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <Label Content="Phone:" HorizontalAlignment="Left" Height="48" Margin="10,565,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <TextBox x:Name="hometel" HorizontalAlignment="Left" Height="38" Margin="743,562,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <Label Content="Tel/Home:" HorizontalAlignment="Left" Height="48" Margin="619,557,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <TextBox x:Name="job1" HorizontalAlignment="Left" Height="38" Margin="743,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="414"/>
+            <Label Content="Job:" HorizontalAlignment="Left" Height="48" Margin="619,475,0,0" VerticalAlignment="Top" Width="119" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <Label Content="Preffered way of contact:" HorizontalAlignment="Left" Height="48" Margin="10,650,0,0" VerticalAlignment="Top" Width="306" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <CheckBox x:Name="chkPhone" Content="Phone" HorizontalAlignment="Left" Height="34" Margin="310,664,0,0" VerticalAlignment="Top" Width="137" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkSms" Content="SmS" HorizontalAlignment="Left" Margin="489,664,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <CheckBox x:Name="chkWhatsapp" Content="What's App" HorizontalAlignment="Left" Margin="626,664,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <Label Content="Date Of Birth:" HorizontalAlignment="Left" Height="48" Margin="619,415,0,0" VerticalAlignment="Top" Width="182" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <DatePicker Name="dpDateOfBirth" HorizontalAlignment="Left" Height="38" Margin="856,420,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            <Label Content="How Long Since Last Received Dental Treatment:" HorizontalAlignment="Left" Height="48" Margin="10,733,0,0" VerticalAlignment="Top" Width="622" FontSize="25" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.58,0.594"/>
+            <TextBox x:Name="treatment" HorizontalAlignment="Left" Height="38" Margin="625,738,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" RenderTransformOrigin="0.345,1.135"/>
+            <Button Click="NextButton_Click" Content="Next " HorizontalAlignment="Left" Height="55" Margin="972,817,0,0" VerticalAlignment="Top" Width="185" FontSize="20" FontFamily="Segoe UI Semibold" Background="#FF5D7599" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="56" Margin="1104,824,0,0" VerticalAlignment="Top" Width="40" Source= "/225482.png"/>
+            <Button Content="Upload Files Pdf" HorizontalAlignment="Left" Height="56" Margin="49,816,0,0" VerticalAlignment="Top" Width="185" FontSize="20" FontFamily="Segoe UI Semibold" Background="#FF5D7599" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="Upload Radiology Image" HorizontalAlignment="Left" Height="56" Margin="337,816,0,0" VerticalAlignment="Top" Width="250" FontSize="20" FontFamily="Segoe UI Semibold" Background="#FF5D7599" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+
+        </Grid>
+    </Viewbox>
+</Window>
