@@ -1,0 +1,30 @@
+﻿<Window x:Class="Software_Project.OCR_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Software_Project"
+        mc:Ignorable="d"
+        Title="OCR Application" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Background="#FF243C58">
+            <TextBlock x:Name="NewTextBlock" Text="" Margin="509,49,35,91" />
+        </Border>
+        <Button Content="Perform OCR" Click="PerformOcrButton_Click" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="67,175,0,0" Background="#FF5D7599" Foreground="#FFFBF8F8" FontFamily="Segoe UI Semibold" Height="53" Width="129" FontSize="20">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="317" Margin="238,47,0,0" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.505,0.654" Source="/WhatsApp_Image_2023-11-12_at_17.53.28_8e441fc8-removebg-preview.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>

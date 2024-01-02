@@ -1,0 +1,15 @@
+﻿<Window x:Class="Software_Project.Book_Appointment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Book Appointment" Height="300" Width="400">
+
+    <Grid Background="#FF243C58">
+        <Label Content="Medical Record Number:" Foreground="White" HorizontalAlignment="Left" Margin="4,62,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold"/>
+        <TextBox x:Name="txtMedicalRecord" HorizontalAlignment="Left" Margin="167,66,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Label Content="Appointment Date:" Foreground="White" HorizontalAlignment="Left" Margin="16,124,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold"/>
+        <DatePicker x:Name="dpAppointmentDate" HorizontalAlignment="Left" Margin="167,126,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Button Content="Book Appointment" Background="#FF5D7599" Foreground="White" HorizontalAlignment="Left" Margin="115,201,0,0" VerticalAlignment="Top" Width="150" Click="BookAppointment_Click" FontFamily="Segoe UI Semibold"/>
+    </Grid>
+</Window>
