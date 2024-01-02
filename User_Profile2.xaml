@@ -1,0 +1,155 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medical_Form"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Medical_Form.userprofile2"
+        mc:Ignorable="d"
+        Title="userprofile2" Height="1100" Width="1500">
+    <Viewbox Stretch="Uniform" Margin="0,79,11,0" >
+        <Grid x:Name="OuterGrid" Width="1235">
+
+            <Label Content="Attending or receiving treatment from doctor, hospital, clinic, or specialist:" HorizontalAlignment="Left" Height="60" Margin="0,39,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <Label Content="Taking any medicines from your doctor? (Tableta, creams, injections, other):" HorizontalAlignment="Left" Height="60" Margin="10,86,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold"/>
+            <Label Content="Allergic to any medicines, food, or materials?" HorizontalAlignment="Left" Height="60" Margin="10,125,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Have you: had Rheumatic fever or Choroa (St.Vitus Dance):" HorizontalAlignment="Left" Height="60" Margin="10,185,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Had jaundice, liver, kidney disease or hepatitis ?" HorizontalAlignment="Left" Height="60" Margin="10,243,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Had jaundice, liver, kidney disease or hepatitis ?" HorizontalAlignment="Left" Height="60" Margin="10,243,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Had jaundice, liver, kidney disease or hepatitis ?" HorizontalAlignment="Left" Height="60" Margin="10,243,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Ever been told you have heart problems&lt; angina, blood pressure, heart attack?" HorizontalAlignment="Left" Height="60" Margin="10,301,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Had a bad reaction to a general or local anaethistic? been hospitalised? " HorizontalAlignment="Left" Height="60" Margin="10,354,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Has a peacemaker, or have you had any form of heart surgery?" HorizontalAlignment="Left" Height="60" Margin="10,422,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Suffer from bronchitis , asthma or any other chest condition ?" HorizontalAlignment="Left" Height="60" Margin="10,482,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="have fainting attack, giddiness, blackouts, or epilepsy ?" HorizontalAlignment="Left" Height="60" Margin="10,538,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Do you or any member of your family suffer from diabetes: " HorizontalAlignment="Left" Height="60" Margin="10,593,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Do you smoke any tobacco products now (did you in the past?)" HorizontalAlignment="Left" Height="60" Margin="10,693,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Label Content="Bruise easily or following a tooth extraction. surgery, or injury?" HorizontalAlignment="Left" Height="60" Margin="10,642,0,0" VerticalAlignment="Top" Width="978" FontSize="25" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2" Grid.Row="2"/>
+
+
+            <Grid>
+                <RadioButton x:Name="rdbAttendingYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,61,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbAttendingNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,61,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbTakinMedicineYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,103,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbTakinMedicineNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,103,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbAllergicYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,138,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbAllergicNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,138,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbRheumaticYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,204,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbRheumaticNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,204,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbjaundiceYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,240,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbjaundiceNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,240,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbHeartProblemsYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,298,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbHeartProblemsNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,298,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbAnaethisticYes" Content="YES" HorizontalAlignment="Left" Height="21" Margin="990,356,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbAnaethisticNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,353,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbPeacemakerYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,417,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbPeacemakerNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,417,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbBronchitisYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,473,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbBronchitisNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,473,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbFaintingAttackYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,541,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbFaintingAttackNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,541,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbDiabetesYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,603,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbDiabetesNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,603,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbBruiseYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,657,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
+                <RadioButton x:Name="rdbBruiseNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,657,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+
+
+            <Grid>
+                <RadioButton x:Name="rdbSmokeYes" Content="YES" HorizontalAlignment="Left" Height="20" Margin="990,712,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+                <RadioButton x:Name="rdbSmokeNo" Content="NO" HorizontalAlignment="Left" Height="21" Margin="1086,712,0,0" VerticalAlignment="Top" Width="56" FontSize="18" FontFamily="Segoe UI Semibold"/>
+            </Grid>
+
+            <Button Click="SubmitButton_Click" Content="Submit" HorizontalAlignment="Left" Margin="942,885,0,51" Width="258" FontSize="25" FontFamily="Segoe UI Semibold" Background="#FF5D7599" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,84,0,0" VerticalAlignment="Top" Width="1200"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,125,0,0" VerticalAlignment="Top" Width="1200"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,178,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,236,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="10,294,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,352,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,414,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,475,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,542,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="-10,598,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="-10,642,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,700,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" Margin="0,753,0,0" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Grid.Row="2"/>
+            <Button Content="" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="97" FontSize="20" Background="#FF5D7599" Margin="-73,-59,0,0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="40" Margin="-36,-63,0,0" VerticalAlignment="Top" Width="58" Source="/225482.png" RenderTransformOrigin="0.676,1.639">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-180.588"/>
+                        <TranslateTransform X="-20.883" Y="-91.013"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Label Content="ARE YOU" HorizontalAlignment="Left" Height="57" Margin="10,-18,0,0" VerticalAlignment="Top" Width="200" FontSize="30" FontFamily="Segoe UI Semibold"/>
+        </Grid>
+    </Viewbox>
+</Window>
