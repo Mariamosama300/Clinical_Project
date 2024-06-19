@@ -1,0 +1,93 @@
+﻿<Window x:Class="Software_Project.Reception"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Software_Project"
+        mc:Ignorable="d"
+        Title="Easy Dental Clinic" Height="1000" Width="1500">
+
+    <Window.Resources>
+        <!-- Button Style with Rounded Corners and Gradient Background -->
+        <Style x:Key="RoundedButton" TargetType="Button">
+            <Setter Property="Foreground" Value="#FFF1ECEC"/>
+            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF5D7599" Offset="0.0"/>
+                        <GradientStop Color="#FF3B506B" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="10" 
+                                BorderBrush="Transparent" 
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border.Effect>
+                                <DropShadowEffect BlurRadius="10" ShadowDepth="2"/>
+                            </Border.Effect>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <!-- Sidebar width -->
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Side Menu -->
+        <StackPanel Grid.Column="0" Background="#FF243C58" VerticalAlignment="Top" Height="798">
+            <Button Content="Home" Style="{StaticResource RoundedButton}" Click="Home_Click"/>
+            <Button Content="User Profile" Style="{StaticResource RoundedButton}" Click="UserProfile_Click"/>
+            <Button Content="Doctor Schedule" Style="{StaticResource RoundedButton}" Click="DoctorSchedule_Click"/>
+            <Button Content="Clinical Files" Style="{StaticResource RoundedButton}" Click="ClinicalFiles_Click"/>
+            <Button Content="Discounts &amp; Vouchers" Style="{StaticResource RoundedButton}" Click="Discounts_Click"/>
+            <Button Content="IVR Booking" Style="{StaticResource RoundedButton}" Click="IVRBooking_Click"/>
+            <Button Content="Tools &amp; Materials" Style="{StaticResource RoundedButton}" Click="ToolsMaterials_Click"/>
+            <Button Content="Chat Bot" Style="{StaticResource RoundedButton}" Click="ChatBot_Click"/>
+            <Button Content="Sign Out" Style="{StaticResource RoundedButton}" Click="SignOut_Click"/>
+        </StackPanel>
+
+        <!-- Main Content -->
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="0" Grid.Row="0" Content="New Appointments" Style="{StaticResource RoundedButton}" Click="Book_Appointment_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="Today's Reviews" Style="{StaticResource RoundedButton}" Click="TodaysReviews_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Update Records" Style="{StaticResource RoundedButton}" Click="UpdateRecords_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="3" Grid.Row="0" Content="Reports" Style="{StaticResource RoundedButton}" Click="Reports_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+
+            <Button Grid.Column="0" Grid.Row="2" Content="Payments" Style="{StaticResource RoundedButton}" Click="Payments_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="Attendees" Style="{StaticResource RoundedButton}" Click="Attendees_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="2" Grid.Row="2" Content="OCR" Style="{StaticResource RoundedButton}" Click="OCR_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+            <Button Grid.Column="3" Grid.Row="2" Content="Order" Style="{StaticResource RoundedButton}" Click="Order_Click" Height="50" Margin="10,10,10,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>

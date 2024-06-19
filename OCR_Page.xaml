@@ -7,24 +7,20 @@
         mc:Ignorable="d"
         Title="OCR Application" Height="450" Width="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" Background="#FF243C58">
-            <TextBlock x:Name="NewTextBlock" Text="" Margin="509,49,35,91" />
-        </Border>
-        <Button Content="Perform OCR" Click="PerformOcrButton_Click" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="67,175,0,0" Background="#FF5D7599" Foreground="#FFFBF8F8" FontFamily="Segoe UI Semibold" Height="53" Width="129" FontSize="20">
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
-        </Button>
-        <Image HorizontalAlignment="Left" Height="317" Margin="238,47,0,0" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.505,0.654" Source="/WhatsApp_Image_2023-11-12_at_17.53.28_8e441fc8-removebg-preview.png">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="0"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <!-- Back Button -->
+        <Button x:Name="backButton" Content="Back to Reception" Click="BackToReception_Click"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,10,0,0"/>
 
+        <!-- Pick Image and Perform OCR Buttons -->
+        <Button x:Name="pickImageButton" Content="Pick Image" Click="PickImageButton_Click"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,46,0,0"/>
+        <Button x:Name="performOcrButton" Content="Perform OCR" Click="PerformOcrButton_Click"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,46,0,0"/>
+
+        <!-- OCR Text Output -->
+        <TextBlock x:Name="ocrTextBlock" Text="" Margin="240,51,41,89"/>
+
+        <!-- Image Display -->
+        <Image x:Name="imageControl" HorizontalAlignment="Left" Height="322" Margin="10,80,0,0" VerticalAlignment="Top" Width="210"/>
     </Grid>
 </Window>

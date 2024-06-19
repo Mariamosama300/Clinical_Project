@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin_Delete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin_Search_Edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Book_Appointment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="doctormain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OCR_Page.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Prescription.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reception.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Admin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin_Delete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Admin_Search_Edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Book_Appointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="doctormain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="mainwindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OCR_Page.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Prescription.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Reception.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
