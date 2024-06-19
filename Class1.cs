@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Log_In
+namespace Software_Project
 {
     public class YourDataModel
     {

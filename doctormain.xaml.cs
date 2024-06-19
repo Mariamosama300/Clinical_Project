@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Log_In
+namespace Software_Project
 {
     /// <summary>
     /// Interaction logic for doctormain.xaml
@@ -31,60 +31,58 @@ namespace Log_In
             DataList = new ObservableCollection<YourDataModel>();
             LoadDataFromDatabase();
         }
+
         private void ToolsButton_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of the other window
-           // material otherWindow = new material();
+            // material otherWindow = new material();
 
             // Show the other window
-           // otherWindow.Show();
+            // otherWindow.Show();
 
             // Optionally, close or hide the current window
             //this.Close();
         }
+
         private void calender_click(object sender, RoutedEventArgs e)
         {
             //trymaking otherWindow = new trymaking();
-             //chatgptprescription chatgptprescription = new chatgptprescription();
-              //chatgptprescription.Show();
+            //chatgptprescription chatgptprescription = new chatgptprescription();
+            //chatgptprescription.Show();
 
-             //otherWindow.Show();
+            //otherWindow.Show();
             // Optionally, close or hide the current window
 
             //ocrwindow ocr = new ocrwindow();    
-           // ocr.Show();
+            // ocr.Show();
             //this.Close();
-
         }
+
         private void signout(object sender, RoutedEventArgs e)
         {
-            MainWindow window1 = new MainWindow();
-            // Show the other window
-           //window1.Show();
-
-            // Optionally, close or hide the current window
+            mainwindow loginWindow = new mainwindow();
+            loginWindow.Show();
             this.Close();
-
         }
-        private void news_Click(object sender, RoutedEventArgs e) {
+
+        private void news_Click(object sender, RoutedEventArgs e)
+        {
             //newsevent otherWindow = new newsevent();
 
             // Show the other window
-           // otherWindow.Show();
+            // otherWindow.Show();
 
             // Optionally, close or hide the current window
             //this.Close();
-            
-
-                 }
-        private void analytic_click(object sender, RoutedEventArgs e)
-        {
-           // patientviewf patientview = new patientviewf();
-           // patientview.Show();
-           // this.Close();
         }
 
-
+        private void analytic_click(object sender, RoutedEventArgs e)
+        {
+            // Navigate to the Prescription window
+            Prescription add = new Prescription();
+            add.Show();
+            this.Close();
+        }
 
         private void LoadDataFromDatabase()
         {

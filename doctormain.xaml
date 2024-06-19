@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Log_In"
-        xmlns:Wpf="clr-namespace:Log_In;assembly=Log_In" x:Class="Log_In.doctormain"
+        xmlns:local="clr-namespace:Software_Project"
+        xmlns:Wpf="clr-namespace:Software_Project;assembly=Software_Project" x:Class="Software_Project.doctormain"
         mc:Ignorable="d"
         Title="doctormain" Height="1100" Width="1500">
     <Viewbox Stretch="Uniform">
@@ -31,7 +31,7 @@
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
-            <Button Content="Analytics " HorizontalAlignment="Left" Height="59" Margin="11,384,0,0" VerticalAlignment="Top" Width="290" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold" Click="analytic_click">
+            <Button Content="Prescription " HorizontalAlignment="Left" Height="59" Margin="11,384,0,0" VerticalAlignment="Top" Width="290" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold" Click="analytic_click">
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
@@ -57,7 +57,7 @@
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
-            
+
 
             <!-- For example, labels, borders, data grids, etc. -->
             <Border BorderBrush="Black" BorderThickness="1" Margin="410,204,-29,327">

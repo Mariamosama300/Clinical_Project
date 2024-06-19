@@ -15,16 +15,14 @@ namespace Software_Project
 
         private void BookAppointment_Click(object sender, RoutedEventArgs e)
         {
-
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(ConnectionString))
                 {
                     connection.Open();
 
-
                     string BookAppointmentQuery = "INSERT INTO appointments (appointment_date, patient_id) " +
-                                   "VALUES (@appointment_date, @patient_id)";
+                                                  "VALUES (@appointment_date, @patient_id)";
 
                     using (MySqlCommand BookAppointmentCmd = new MySqlCommand(BookAppointmentQuery, connection))
                     {
@@ -40,6 +38,14 @@ namespace Software_Project
             {
                 MessageBox.Show($"Error saving data: {ex.Message}");
             }
+        }
+
+        private void BackToReception_Click(object sender, RoutedEventArgs e)
+        {
+            // Create an instance of Reception window
+            Reception receptionWindow = new Reception();
+            receptionWindow.Show();  // Show the Reception window
+            this.Close();  // Close the current Book_Appointment window
         }
     }
 }
